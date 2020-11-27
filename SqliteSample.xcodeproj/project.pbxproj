@@ -13,6 +13,7 @@
 		6448A12B2570A9A900CAC683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6448A1292570A9A900CAC683 /* Main.storyboard */; };
 		6448A12D2570A9AC00CAC683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6448A12C2570A9AC00CAC683 /* Assets.xcassets */; };
 		6448A1302570A9AC00CAC683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6448A12E2570A9AC00CAC683 /* LaunchScreen.storyboard */; };
+		6448A13A2570AA5A00CAC683 /* SqliteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6448A1392570AA5A00CAC683 /* SqliteManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		6448A12C2570A9AC00CAC683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6448A12F2570A9AC00CAC683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6448A1312570A9AC00CAC683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6448A1392570AA5A00CAC683 /* SqliteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SqliteManager.swift; sourceTree = "<group>"; };
+		6448A13C2570AA6600CAC683 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 			children = (
 				6448A1222570A9A900CAC683 /* SqliteSample */,
 				6448A1212570A9A900CAC683 /* Products */,
+				6448A13B2570AA6600CAC683 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +60,40 @@
 		6448A1222570A9A900CAC683 /* SqliteSample */ = {
 			isa = PBXGroup;
 			children = (
+				6448A1372570A9B300CAC683 /* SqliteManager */,
+				6448A1382570A9E800CAC683 /* SqliteSampleCode */,
+				6448A1312570A9AC00CAC683 /* Info.plist */,
+			);
+			path = SqliteSample;
+			sourceTree = "<group>";
+		};
+		6448A1372570A9B300CAC683 /* SqliteManager */ = {
+			isa = PBXGroup;
+			children = (
+				6448A1392570AA5A00CAC683 /* SqliteManager.swift */,
+			);
+			path = SqliteManager;
+			sourceTree = "<group>";
+		};
+		6448A1382570A9E800CAC683 /* SqliteSampleCode */ = {
+			isa = PBXGroup;
+			children = (
 				6448A1232570A9A900CAC683 /* AppDelegate.swift */,
 				6448A1252570A9A900CAC683 /* SceneDelegate.swift */,
 				6448A1272570A9A900CAC683 /* ViewController.swift */,
 				6448A1292570A9A900CAC683 /* Main.storyboard */,
 				6448A12C2570A9AC00CAC683 /* Assets.xcassets */,
 				6448A12E2570A9AC00CAC683 /* LaunchScreen.storyboard */,
-				6448A1312570A9AC00CAC683 /* Info.plist */,
 			);
-			path = SqliteSample;
+			path = SqliteSampleCode;
+			sourceTree = "<group>";
+		};
+		6448A13B2570AA6600CAC683 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6448A13C2570AA6600CAC683 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +170,7 @@
 				6448A1282570A9A900CAC683 /* ViewController.swift in Sources */,
 				6448A1242570A9A900CAC683 /* AppDelegate.swift in Sources */,
 				6448A1262570A9A900CAC683 /* SceneDelegate.swift in Sources */,
+				6448A13A2570AA5A00CAC683 /* SqliteManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
