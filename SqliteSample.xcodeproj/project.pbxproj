@@ -14,6 +14,7 @@
 		6448A12D2570A9AC00CAC683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6448A12C2570A9AC00CAC683 /* Assets.xcassets */; };
 		6448A1302570A9AC00CAC683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6448A12E2570A9AC00CAC683 /* LaunchScreen.storyboard */; };
 		6448A13A2570AA5A00CAC683 /* SqliteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6448A1392570AA5A00CAC683 /* SqliteManager.swift */; };
+		6448A13D2570F75400CAC683 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6448A13C2570AA6600CAC683 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6448A13D2570F75400CAC683 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
